@@ -7,6 +7,7 @@ import cloud4rpi
 import ds18b20
 import rpi
 import RPi.GPIO as GPIO  # pylint: disable=F0401
+import drivelcd
 
 # Put your device token here. To get the token,
 # sign up at https://cloud4rpi.io and create a device.
