@@ -42,16 +42,7 @@ LCD_LINE_2 = 0xC0 # LCD memory location 2nd line
 # Define main program code
 def main():
  
- GPIO.setwarnings(False)
- GPIO.setmode(GPIO.BCM) # Use BCM GPIO numbers
- GPIO.setup(LCD_E, GPIO.OUT) # Set GPIO's to output mode
- GPIO.setup(LCD_RS, GPIO.OUT)
- GPIO.setup(LCD_D4, GPIO.OUT)
- GPIO.setup(LCD_D5, GPIO.OUT)
- GPIO.setup(LCD_D6, GPIO.OUT)
- GPIO.setup(LCD_D7, GPIO.OUT)
-
-# Initialize display
+ # Initialize display
  lcd_init()
 
 # Loop - send text and sleep 3 seconds between texts
@@ -86,6 +77,15 @@ def main():
 
 # Initialize and clear display
 def lcd_init():
+ GPIO.setwarnings(False)
+ GPIO.setmode(GPIO.BCM) # Use BCM GPIO numbers
+ GPIO.setup(LCD_E, GPIO.OUT) # Set GPIO's to output mode
+ GPIO.setup(LCD_RS, GPIO.OUT)
+ GPIO.setup(LCD_D4, GPIO.OUT)
+ GPIO.setup(LCD_D5, GPIO.OUT)
+ GPIO.setup(LCD_D6, GPIO.OUT)
+ GPIO.setup(LCD_D7, GPIO.OUT) # moved here by dan and patrick
+ 
  lcd_write(0x33,LCD_CMD) # Initialize
  lcd_write(0x32,LCD_CMD) # Set to 4-bit mode
  lcd_write(0x06,LCD_CMD) # Cursor move direction
