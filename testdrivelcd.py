@@ -144,7 +144,7 @@ def lcd_text(message,line):
 
  lcd_write(line, LCD_CMD)
 
-  for i in range(LCD_CHARS):
+ for i in range(LCD_CHARS):
   lcd_write(ord(message[i]),LCD_CHR)
 
 
