@@ -100,31 +100,31 @@ def main():
     device = cloud4rpi.connect(DEVICE_TOKEN)
 
     # Loop - send text and sleep 3 seconds between texts
-# Change text to anything you wish, but must be 16 characters or less
+    # Change text to anything you wish, but must be 16 characters or less
 
-while True:
-    drivelcd.lcd_text("Hello World!",LCD_LINE_1)
-    drivelcd.lcd_text("",LCD_LINE_2)
+    while True:
+        drivelcd.lcd_text("Hello World!",LCD_LINE_1)
+        drivelcd.lcd_text("",LCD_LINE_2)
 
-    drivelcd.lcd_text("Rasbperry Pi",LCD_LINE_1)
-    drivelcd.lcd_text("16x2 LCD Display",LCD_LINE_2)
+        drivelcd.lcd_text("Rasbperry Pi",LCD_LINE_1)
+        drivelcd.lcd_text("16x2 LCD Display",LCD_LINE_2)
 
-    sleep(3) # 3 second delay
+        sleep(3) # 3 second delay
 
-    drivelcd.lcd_text("ABCDEFGHIJKLMNOP",LCD_LINE_1)
-    drivelcd.lcd_text("1234567890123456",LCD_LINE_2)
+        drivelcd.lcd_text("ABCDEFGHIJKLMNOP",LCD_LINE_1)
+        drivelcd.lcd_text("1234567890123456",LCD_LINE_2)
 
-    sleep(3) # 3 second delay
+        sleep(3) # 3 second delay
 
-    drivelcd.lcd_text("I love my",LCD_LINE_1)
-    drivelcd.lcd_text("Raspberry Pi!",LCD_LINE_2)
+        drivelcd.lcd_text("I love my",LCD_LINE_1)
+        drivelcd.lcd_text("Raspberry Pi!",LCD_LINE_2)
 
-    sleep(3)
+        sleep(3)
 
-    drivelcd.lcd_text("MBTechWorks.com",LCD_LINE_1)
-    drivelcd.lcd_text("For more R Pi",LCD_LINE_2)
+        drivelcd.lcd_text("MBTechWorks.com",LCD_LINE_1)
+        drivelcd.lcd_text("For more R Pi",LCD_LINE_2)
 
-    sleep(3)
+        sleep(3)
 
     
     # Use the following 'device' declaration
