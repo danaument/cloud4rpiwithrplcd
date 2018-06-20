@@ -102,13 +102,13 @@ def lcd_write(bits, mode):
  GPIO.output(LCD_D5, False)
  GPIO.output(LCD_D6, False)
  GPIO.output(LCD_D7, False)
- if bits&0x10==0x10:
+  if bits&0x10==0x10:
  GPIO.output(LCD_D4, True)
- if bits&0x20==0x20:
+  if bits&0x20==0x20:
  GPIO.output(LCD_D5, True)
- if bits&0x40==0x40:
+  if bits&0x40==0x40:
  GPIO.output(LCD_D6, True)
- if bits&0x80==0x80:
+  if bits&0x80==0x80:
  GPIO.output(LCD_D7, True)
 
 # Toggle 'Enable' pin
