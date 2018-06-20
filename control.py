@@ -21,9 +21,8 @@ DIAG_SENDING_INTERVAL = 60  # secs
 POLL_INTERVAL = 0.5  # 500 ms
 
 # Configure GPIO library
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(LED_PIN, GPIO.OUT)
-
+# GPIO.setmode(GPIO.BOARD)
+# GPIO.setup(LED_PIN, GPIO.OUT)
 
 # Handler for the button or switch variable
 def led_control(value=None):
@@ -44,6 +43,9 @@ def listen_for_events():
 
 
 def main():
+    # initialize lcd
+    drivelcd.lcd_init()
+    
     # Load w1 modules
     ds18b20.init_w1()
 
@@ -88,8 +90,8 @@ def main():
         }
     }
     
-    # initialize lcd
-    drivelcd.lcd_init()
+
+       
     
     diagnostics = {
         'CPU Temp': rpi.cpu_temp,
