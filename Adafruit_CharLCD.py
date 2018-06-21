@@ -69,15 +69,15 @@ LCD_ROW_OFFSETS         = (0x00, 0x40, 0x14, 0x54)
 
 # Char LCD plate GPIO numbers.
 LCD_PLATE_RS            = 25  # originally 15
-LCD_PLATE_RW            =   # originally 14
+#  LCD_PLATE_RW            =   # originally 14
 LCD_PLATE_EN            = 24  # originally 13
 LCD_PLATE_D4            = 23  # originally 12
 LCD_PLATE_D5            = 17  # originally 11
 LCD_PLATE_D6            = 21  # originally 10
 LCD_PLATE_D7            = 22  # originally 9
-LCD_PLATE_RED           =   # originally 6
-LCD_PLATE_GREEN         =   # originally 7
-LCD_PLATE_BLUE          =   # originally 8
+#  LCD_PLATE_RED           =   # originally 6
+#  LCD_PLATE_GREEN         =   # originally 7
+#  LCD_PLATE_BLUE          =   # originally 8
 
 # Char LCD plate button names.
 SELECT                  = 0
