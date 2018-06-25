@@ -45,9 +45,9 @@ POLL_INTERVAL = 0.5  # 500 ms
 # GPIO.setup(LED_PIN, GPIO.OUT)
 
 # Handler for the button or switch variable
-def led_control(value=None):
-    GPIO.output(LED_PIN, value)
-    return GPIO.input(LED_PIN)
+# def led_control(value=None):
+#     GPIO.output(LED_PIN, value)
+#     return GPIO.input(LED_PIN)
 
 
 def listen_for_events():
