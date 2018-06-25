@@ -95,8 +95,6 @@ def main():
             'type': 'numeric',
             'bind': ds_sensors[4] if len(ds_sensors) > 1 else None
         },
-
-        },
         'CPU Temp': {
             'type': 'numeric',
             'bind': rpi.cpu_temp
@@ -108,7 +106,8 @@ def main():
 #        'LED On': {
 #            'type': 'bool',
 #            'value': False,
-#            'bind': led_control
+#            'bind': led_control#
+#         },
     }
     
 
