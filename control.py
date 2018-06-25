@@ -8,7 +8,6 @@ import ds18b20
 import rpi
 import RPi.GPIO as GPIO  # pylint: disable=F0401
 import Adafruit_CharLCD as LCD
-import Adafruit_CharLCD as drivelcd
 
 # Put your device token here. To get the token,
 # sign up at https://cloud4rpi.io and create a device.
@@ -65,7 +64,7 @@ def listen_for_events():
 
 def main():
     # initialize lcd
-    drivelcd.lcd_init()
+    # drivelcd.lcd_init()
     
     # Load w1 modules
     ds18b20.init_w1()
@@ -155,28 +154,10 @@ def main():
             diag_timer -= POLL_INTERVAL
             data_timer -= POLL_INTERVAL
        
-            drivelcd.lcd_text("Hello World!",LCD_LINE_1)
-            drivelcd.lcd_text("",LCD_LINE_2)
-
-            drivelcd.lcd_text("Rasbperry Pi",LCD_LINE_1)
-            drivelcd.lcd_text("16x2 LCD Display",LCD_LINE_2)
-
-            sleep(1) # 3 second delay
-
-            drivelcd.lcd_text("ABCDEFGHIJKLMNOP",LCD_LINE_1)
-            drivelcd.lcd_text("1234567890123456",LCD_LINE_2)
-
-            sleep(1) # 3 second delay
-
-            drivelcd.lcd_text("I love my",LCD_LINE_1)
-            drivelcd.lcd_text("Raspberry Pi!",LCD_LINE_2)
-
-            sleep(1)
-
-            drivelcd.lcd_text("MBTechWorks.com",LCD_LINE_1)
-            drivelcd.lcd_text("For more R Pi",LCD_LINE_2)
-
-            sleep(1)
+            lcd.message('Glycol Temps')
+            time.sleep(5.0)
+            lcd.clear()
+            
 
     except KeyboardInterrupt:
         cloud4rpi.log.info('Keyboard interrupt received. Stopping...')
