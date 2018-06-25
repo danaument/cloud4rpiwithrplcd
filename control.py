@@ -95,10 +95,7 @@ def main():
             'type': 'numeric',
             'bind': ds_sensors[4] if len(ds_sensors) > 1 else None
         },
-#        'LED On': {
-#            'type': 'bool',
-#            'value': False,
-#            'bind': led_control
+
         },
         'CPU Temp': {
             'type': 'numeric',
@@ -108,6 +105,10 @@ def main():
             'type': 'string',
             'bind': listen_for_events
         }
+#        'LED On': {
+#            'type': 'bool',
+#            'value': False,
+#            'bind': led_control
     }
     
 
