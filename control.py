@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import time
+from time import sleep
 import sys
 import random
 import cloud4rpi
@@ -31,7 +31,7 @@ lcd = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_c
 lcd.message('Hello\nworld!')
 # Wait 5 seconds
 
-time.sleep(5.0)
+sleep(5.0)
 lcd.clear()
 
 # Constants
