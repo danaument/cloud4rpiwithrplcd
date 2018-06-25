@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import time
+import sleep from time
 import sys
 import random
 import cloud4rpi
