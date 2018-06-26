@@ -154,7 +154,7 @@ def main():
             diag_timer -= POLL_INTERVAL
             data_timer -= POLL_INTERVAL
        
-            lcd.message('Glycol Temps')
+            lcd.message('Temp1: {Temp1}")
             sleep(5.0)
             lcd.clear()
             
