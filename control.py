@@ -154,7 +154,7 @@ def main():
             diag_timer -= POLL_INTERVAL
             data_timer -= POLL_INTERVAL
        
-            lcd.message(str(Temp1))
+            lcd.message(str(ds_sensors[0]))
             sleep(5.0)
             lcd.clear()
             
