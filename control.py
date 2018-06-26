@@ -8,6 +8,7 @@ import ds18b20
 import rpi
 import RPi.GPIO as GPIO  # pylint: disable=F0401
 import Adafruit_CharLCD as LCD
+import re
 
 # Put your device token here. To get the token,
 # sign up at https://cloud4rpi.io and create a device.
@@ -154,9 +155,10 @@ def main():
             diag_timer -= POLL_INTERVAL
             data_timer -= POLL_INTERVAL
        
-            temp1 = float(str(variables['Temp1']))
-                
-            lcd.message(temp1)
+            temp1 = variables['Temp1']
+            
+            searchObj = re.search( r'(.*) : (.*) , 'type': 'numeric', 'value': (.*), temp1, re.M|re.I)              
+            lcd.message('Temp1:', searchObj.group(3))
             sleep(5.0)
             lcd.clear()
             
