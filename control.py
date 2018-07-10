@@ -160,6 +160,7 @@ def main():
             tempuno = temp1.get("value")
             tempuno = Decimal(tempuno)
             tempuno = round(tempuno, 1)
+            str(tempuno)
             lcd.message(tempuno) 
 
             sleep(5.0)
