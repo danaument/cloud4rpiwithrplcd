@@ -157,7 +157,7 @@ def main():
        
             temp1 = variables['Temp1']
             tempuno = temp1.get("value")
-            tempuno = decimal(tempuno)
+            tempuno = Decimal(tempuno)
             tempuno = round(tempuno, 1)
             lcd.message(tempuno) 
 
