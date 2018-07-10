@@ -158,7 +158,7 @@ def main():
             temp1 = variables['Temp1']
             tempuno = temp1.get("value")
             problems = 99
-            lcd.message(%d) % problems
+            lcd.message('%d') % problems
             # searchObj = re.search( r'(.*) : (.*) , 'type': 'numeric', 'value': (.*), temp1, re.M|re.I)              
             # lcd.message('Temp1:', searchObj.group(3))
             sleep(5.0)
