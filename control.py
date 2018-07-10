@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from time import sleep
+from decimal import Decimal
 import sys
 import random
 import cloud4rpi
