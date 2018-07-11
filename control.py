@@ -171,7 +171,7 @@ def main():
             temp5 = variables['Temp5']
             tempcin = str(temp5.get("value"))
             cputemp = variables['CPU Temp']
-            # cputemp = str(cputemp.get("CPU Temp"))
+            cputemp = str(cputemp.get("value"))
             page3 = 'Temp5:' + str(tempcin) + '\nCPU:' + str(cputemp)
             
             print cputemp
