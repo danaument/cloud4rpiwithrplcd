@@ -160,7 +160,7 @@ def main():
             tempuno = str(temp1.get("value"))
             temp2 = variables['Temp2']
             tempdos = str(temp2.get("value"))
-            page1 = 'Temp1:' + tempuno + '\nTemp2:' + tempdos
+            page1 = 'Temp1:' + str(tempuno) + '\nTemp2:' + str(tempdos)
             
             temp3 = variables['Temp3']
             temptre = str(temp3.get("value"))
@@ -178,10 +178,10 @@ def main():
             sleep(5.0)
             lcd.clear()
             lcd.message(page2)  
-            sleep(5.0)
+            sleep(3.0)
             lcd.clear()
             lcd.message(page3)  
-            sleep(5.0)
+            sleep(3.0)
             lcd.clear()
 
  
