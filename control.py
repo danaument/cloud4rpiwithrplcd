@@ -169,15 +169,15 @@ def main():
             cputemp = variables['CPU Temp']
             tempuno = str(cputemp.get("value"))
             
-            lcd.message('Temp1:' tempuno \n 'Temp2:' tempdos)
+            lcd.message('Temp1:' tempuno '\nTemp2:' tempdos)
             sleep(5.0)
             lcd.clear()
 
-            lcd.message('Temp3:' temptre \n 'Temp4:' tempcua)
+            lcd.message('Temp3:' temptre '\nTemp4:' tempcua)
             sleep(5.0)
             lcd.clear()
             
-            lcd.message('Temp5:' tempcin \n 'CPU:' cputemp)
+            lcd.message('Temp5:' tempcin '\nCPU:' cputemp)
             sleep(5.0)
             lcd.clear()
 
