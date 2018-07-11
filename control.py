@@ -166,13 +166,13 @@ def main():
             temptre = str(temp3.get("value"))
             temp4 = variables['Temp4']
             tempcua = str(temp4.get("value"))
-            page2 = 'Temp3:' + temptre + '\nTemp4:' + tempcua
+            page2 = 'Temp3:' + str(temptre) + '\nTemp4:' + str(tempcua)
             
             temp5 = variables['Temp5']
             tempcin = str(temp5.get("value"))
             cputemp = variables['CPU Temp']
             tempuno = str(cputemp.get("value"))
-            page3 = 'Temp5:' + tempcin + '\nCPU:' + cputemp
+            page3 = 'Temp5:' + str(tempcin) + '\nCPU:' + str(cputemp)
             
             lcd.message(page1)  
             sleep(5.0)
