@@ -174,6 +174,8 @@ def main():
             cputemp = str(cputemp.get("CPU Temp"))
             page3 = 'Temp5:' + str(tempcin) + '\nCPU:' + str(cputemp)
             
+            print cputemp
+            
             lcd.message(page1)  
             sleep(5.0)
             lcd.clear()
