@@ -158,14 +158,28 @@ def main():
        
             temp1 = variables['Temp1']
             tempuno = str(temp1.get("value"))
-            # tempuno = Decimal(tempuno)
-            # tempuno = round(tempuno, 1)
-            # str(tempuno)
-            lcd.message(tempuno) 
+            temp2 = variables['Temp2']
+            tempdos = str(temp2.get("value"))
+            temp3 = variables['Temp3']
+            temptre = str(temp3.get("value"))
+            temp4 = variables['Temp4']
+            tempcua = str(temp4.get("value"))
+            temp5 = variables['Temp5']
+            tempcin = str(temp5.get("value"))
+            cputemp = variables['CPU Temp']
+            tempuno = str(cputemp.get("value"))
+            
+            lcd.message('Temp1:'tempuno\n'Temp2:'tempdos')
+            sleep(5.0)
+            lcd.clear()
 
+            lcd.message('Temp3:'temptre\n'Temp4:'tempcua')
             sleep(5.0)
             lcd.clear()
             
+            lcd.message('Temp5:'tempcin\n'CPU:'cputemp')
+            sleep(5.0)
+            lcd.clear()
 
     except KeyboardInterrupt:
         cloud4rpi.log.info('Keyboard interrupt received. Stopping...')
