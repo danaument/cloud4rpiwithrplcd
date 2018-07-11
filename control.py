@@ -160,21 +160,19 @@ def main():
             tempuno = str(temp1.get("value"))
             temp2 = variables['Temp2']
             tempdos = str(temp2.get("value"))
-            page1 = 'Temp1:' + str(tempuno) + '\nTemp2:' + str(tempdos)
+            page1 = 'GlyRes:' + str(tempuno) + '\nGlyRet:' + str(tempdos)
             
             temp3 = variables['Temp3']
             temptre = str(temp3.get("value"))
             temp4 = variables['Temp4']
             tempcua = str(temp4.get("value"))
-            page2 = 'Temp3:' + str(temptre) + '\nTemp4:' + str(tempcua)
+            page2 = 'CompTop:' + str(temptre) + '\nCompBot:' + str(tempcua)
             
             temp5 = variables['Temp5']
             tempcin = str(temp5.get("value"))
             cputemp = variables['CPU Temp']
             cputemp = str(cputemp.get("value"))
-            page3 = 'Temp5:' + str(tempcin) + '\nCPU:' + str(cputemp)
-            
-            print cputemp
+            page3 = 'Ambient:' + str(tempcin) + '\nCPU:' + str(cputemp)
             
             lcd.message(page1)  
             sleep(5.0)
