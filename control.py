@@ -160,27 +160,31 @@ def main():
             tempuno = str(temp1.get("value"))
             temp2 = variables['Temp2']
             tempdos = str(temp2.get("value"))
+            page1 = 'Temp1:{} \nTemp2:{}' format(tempuno, tempdos)
+            
             temp3 = variables['Temp3']
             temptre = str(temp3.get("value"))
             temp4 = variables['Temp4']
             tempcua = str(temp4.get("value"))
+            page2 = 'Temp3:{} \nTemp4:{}' format(temptre, tempcua)
+            
             temp5 = variables['Temp5']
             tempcin = str(temp5.get("value"))
             cputemp = variables['CPU Temp']
             tempuno = str(cputemp.get("value"))
+            page3 = 'Temp5:{} \nCPU:{}' format(tempcin, cputemp)
             
-            lcd.message('Temp1:' tempuno)   # '\nTemp2:'tempdos)
+            lcd.message(page1)  
+            sleep(5.0)
+            lcd.clear()
+            lcd.message(page2)  
+            sleep(5.0)
+            lcd.clear()
+            lcd.message(page3)  
             sleep(5.0)
             lcd.clear()
 
-            # lcd.message('Temp3:',temptre,'\nTemp4:'tempcua)
-            # sleep(5.0)
-            # lcd.clear()
-            
-            # lcd.message('Temp5:,'tempcin,'\nCPU:'cputemp)
-            # sleep(5.0)
-            # lcd.clear()
-
+ 
     except KeyboardInterrupt:
         cloud4rpi.log.info('Keyboard interrupt received. Stopping...')
 
