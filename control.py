@@ -171,7 +171,7 @@ def main():
             temp5 = variables['Temp5']
             tempcin = str(temp5.get("value"))
             cputemp = variables['CPU Temp']
-            tempuno = str(cputemp.get("value"))
+            tempuno = str(cputemp.get("CPU Temp"))
             page3 = 'Temp5:' + str(tempcin) + '\nCPU:' + str(cputemp)
             
             lcd.message(page1)  
